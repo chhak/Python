@@ -15,7 +15,7 @@ def index():
         'title': '대한민국 도시',
         'cities': ['서울', '대전', '대구', '부산', '광주']
     }
-    return render_template('/register.html', tit=title, cont=content, data=dataset)
+    return render_template('/index.html', tit=title, cont=content, data=dataset)
 
 @app.route('/main')
 def main():
