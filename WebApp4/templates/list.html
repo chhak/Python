@@ -14,13 +14,15 @@
             <td>나이</td>
             <td>기타</td>
         </tr>
+        {% for user in users %}
         <tr>
-            <td>klanle</td>
-            <td>홍길동</td>
-            <td>010-1234-1234</td>
-            <td>17</td>
+            <td>{{user.uid}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.hp}}</td>
+            <td>{{user.age}}</td>
             <td><a href="#">삭제</a></td>
         </tr>
+        {% endfor %}
     </table>
     <a href="/register">직원등록</a>
 </body>
